@@ -138,7 +138,8 @@ main :first-child {
 }
 
 aside {
-	width: 30%;
+	width: 25%;
+	flex-shrink: 0;
 }
 
 header {
@@ -294,6 +295,35 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+.circle-photo {
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;       
+	height: 200px;
+	border-radius: 50%;  
+	overflow: hidden;
+}
+
+.circle-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profilename {
+	text-align: center;
+	width: 100%;
+}
+
+.github-logo {
+	width: 16px;
+	height: 16px;
+}
+
+.profiledesc{
+	font-size: 0.9em;
 }</style>
 	</head>
 	<body>
@@ -311,14 +341,34 @@ header {
 		</header>
 
 		<main id="skip">
+			
 			<aside>
-				Hello
+				<div class="circle-photo">
+					<picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fphoto_square.jpg&width=644&format=avif&via=transform 644w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fphoto_square.jpg&width=644&format=webp&via=transform 644w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fphoto_square.jpg&width=644&format=jpeg&via=transform" alt="Profile photo" width="644" height="644"></picture>
+				</div>
+				<p class="profilename">Yurou Nina Liu</p>
+				<p class="profiledesc">Physics (Intensive) and Computer Science Undergraduate</p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="institution">
+					<path fill="#444" d="M8 0 0 3v2h16V3zM0 14h16v2H0v-2zM16 7V6H0v1h1v5H0v1h16v-1h-1V7h1zM4 12H3V7h1v5zm3 0H6V7h1v5zm3 0H9V7h1v5zm3 0h-1V7h1v5z"></path>
+				</svg>&nbsp; Yale University
+				<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" width="16" height="12" id="email">
+						<path fill-rule="evenodd" d="M10 12.474 0 3.649V15h20V3.649l-10 8.825zm.001-2.662L0 .981V0h20v.981l-9.999 8.831z"></path>
+					</svg>&nbsp;
+				<a href="mailto:yurou.liu@yale.edu" target="_blank" aria-label="Email">
+					Email
+				</a></p>
+				<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fgithub-mark.svg&width=98&format=avif&via=transform 98w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fgithub-mark.svg&width=98&format=webp&via=transform 98w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fgithub-mark.svg&width=98&format=svg&via=transform" alt="GitHub logo" class="github-logo" width="98" height="96"></picture>&nbsp;
+				<a href="https://github.com/yurouninaliu" target="_blank" aria-label="GitHub Profile">
+					GitHub				
+				</a></p>
 			</aside>
+			
 			<heading-anchors>
 				
 
 <h1 id="about-me">About Me</h1>
-<p>Hello world</p>
+<p>I'm a rising senior at Yale University studying Physics (Intensive) and Computer Science, with a focus on exoplanetary science. I am interested in exoplanetary dynamics and atmospheres. I’ve studied how double hot Jupiter systems can form through von Zeipel–Lidov–Kozai migration in binary star systems, and I'm working on atmospheric retrievals of directly imaged gas giants and brown dwarfs.</p>
+<p>Beyond astrophysics research, I've designed my computer science major around computer graphics and game engines. I'm interested in coding creative projects that bridge science and storytelling.</p>
 
 
 			</heading-anchors>
@@ -328,7 +378,7 @@ header {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
 		</footer> -->
 
-		<!-- This page `/` was built on 2025-04-30T01:28:14.279Z -->
+		<!-- This page `/` was built on 2025-04-30T03:38:32.968Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>

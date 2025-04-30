@@ -53,9 +53,28 @@
 		</header>
 
 		<main id="skip">
+			{% if page.url == '/projects/' or not page.url.startsWith('/projects') %}
 			<aside>
-				Hello
+				<div class="circle-photo">
+					<img src="/photo_square.jpg" alt="Profile photo">
+				</div>
+				<p class="profilename">Yurou Nina Liu</p>
+				<p class="profiledesc">Physics (Intensive) and Computer Science Undergraduate</p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="institution">
+					<path fill="#444" d="M8 0 0 3v2h16V3zM0 14h16v2H0v-2zM16 7V6H0v1h1v5H0v1h16v-1h-1V7h1zM4 12H3V7h1v5zm3 0H6V7h1v5zm3 0H9V7h1v5zm3 0h-1V7h1v5z"></path>
+				</svg>&nbsp; Yale University
+				<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" width="16" height="12" id="email">
+						<path fill-rule="evenodd" d="M10 12.474 0 3.649V15h20V3.649l-10 8.825zm.001-2.662L0 .981V0h20v.981l-9.999 8.831z"></path>
+					</svg>&nbsp;
+				<a href="mailto:yurou.liu@yale.edu" target="_blank" aria-label="Email">
+					Email
+				</a></p>
+				<p><img src="/github-mark.svg" alt="GitHub logo" class="github-logo">&nbsp;
+				<a href="https://github.com/yurouninaliu" target="_blank" aria-label="GitHub Profile">
+					GitHub				
+				</a></p>
 			</aside>
+			{% endif %}
 			<heading-anchors>
 				{{ content | safe }}
 			</heading-anchors>

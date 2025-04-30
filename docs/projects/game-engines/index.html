@@ -138,7 +138,8 @@ main :first-child {
 }
 
 aside {
-	width: 30%;
+	width: 25%;
+	flex-shrink: 0;
 }
 
 header {
@@ -294,6 +295,35 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+.circle-photo {
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;       
+	height: 200px;
+	border-radius: 50%;  
+	overflow: hidden;
+}
+
+.circle-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profilename {
+	text-align: center;
+	width: 100%;
+}
+
+.github-logo {
+	width: 16px;
+	height: 16px;
+}
+
+.profiledesc{
+	font-size: 0.9em;
 }</style>
 	</head>
 	<body>
@@ -311,14 +341,12 @@ header {
 		</header>
 
 		<main id="skip">
-			<aside>
-				Hello
-			</aside>
+			
 			<heading-anchors>
 				
 
 <p>test</p>
-<picture><source type="image/avif" srcset="/projects/game-engines/MXUQNq3QiB-3415.avif 3415w"><source type="image/webp" srcset="/projects/game-engines/MXUQNq3QiB-3415.webp 3415w"><img loading="lazy" decoding="async" src="/projects/game-engines/MXUQNq3QiB-3415.png" alt="Engine Architecture" style="width:700px" width="3415" height="1755"></picture>
+<picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fprojects%2Fdiagram.png&width=3415&format=avif&via=transform 3415w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fprojects%2Fdiagram.png&width=3415&format=webp&via=transform 3415w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fprojects%2Fdiagram.png&width=3415&format=png&via=transform" alt="Engine Architecture" style="width:700px" width="3415" height="1755"></picture>
 
 			</heading-anchors>
 		</main>
@@ -327,7 +355,7 @@ header {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
 		</footer> -->
 
-		<!-- This page `/projects/game-engines/` was built on 2025-04-30T01:28:14.279Z -->
+		<!-- This page `/projects/game-engines/` was built on 2025-04-30T03:38:32.968Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
