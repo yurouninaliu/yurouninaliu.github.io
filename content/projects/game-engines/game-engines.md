@@ -15,6 +15,9 @@
 
 [Link to Binary File for Mac Silicon](prog_sdl)
 
+Link to Source Code (To be added)
+Compilation Notes: Simply run DUB from the Engine directory (make sure to do the equivalent of "export DYLD_LIBRARY_PATH=/opt/homebrew/lib").
+
 Post Mortem
 
 If I had more time, I would work on my game play mechanics of awarding additional points when you dodge an obstacle just in time. Currently it's implemented as simply adding 30 points if you flip right before hitting an obstacle, but it's hard to notice that this happened. I would like to implement some type of animation so show that this happened that won't get into the way of the game, but still let the player know and they got extra points for skill. Similarly, I would like to add collison animations and animations for winning and losing the game.
