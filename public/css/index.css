@@ -316,3 +316,30 @@ header {
 .profiledesc{
 	font-size: 0.9em;
 }
+
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 1;
+    width: 100%;
+  }
+
+  .content {
+    order: 2;
+    width: 100%;
+  }
+}

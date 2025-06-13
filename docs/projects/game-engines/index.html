@@ -324,6 +324,33 @@ header {
 
 .profiledesc{
 	font-size: 0.9em;
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 1;
+    width: 100%;
+  }
+
+  .content {
+    order: 2;
+    width: 100%;
+  }
 }</style>
 	</head>
 	<body>
@@ -343,9 +370,11 @@ header {
 		</header>
 
 		<main id="skip">
-			
-			<heading-anchors>
+			<div class="layout">
 				
+				<div class="content">
+					<heading-anchors>
+						
 
 <h1 id="my-game-engine">My Game Engine</h1>
 <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/rtEZXfhsqsQ" frameborder="0"></iframe>
@@ -365,14 +394,16 @@ Compilation Notes: Simply run DUB from the Engine directory.</p>
 <p>It will also be nice to get a license so that my binary won't be treated as malware when downloaded from this website.</p>
 
 
-			</heading-anchors>
+					</heading-anchors>
+				</div>
+			</div>
 		</main>
 
 		<!-- <footer>
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
 		</footer> -->
 
-		<!-- This page `/projects/game-engines/` was built on 2025-06-13T20:03:54.475Z -->
+		<!-- This page `/projects/game-engines/` was built on 2025-06-13T20:22:54.196Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
