@@ -16,10 +16,11 @@ export default async function(eleventyConfig) {
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
-	eleventyConfig
-		.addPassthroughCopy({
-			"./public/": "/"
-		});
+	eleventyConfig.addPassthroughCopy("public");
+	// eleventyConfig
+	// 	.addPassthroughCopy({
+	// 		"./public/": "/",
+	// 	});
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -43,12 +44,13 @@ export default async function(eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
-	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+	// eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+		formats: ["avif", "webp", "auto", "gif"],
+
 
 		// widths: ["auto"],
 
@@ -61,6 +63,7 @@ export default async function(eleventyConfig) {
 			}
 		},
 
+		
 		sharpOptions: {
 			animated: true,
 		},
@@ -107,7 +110,7 @@ export const config = {
 
 	// These are all optional:
 	dir: {
-		input: "content",          // default: "."
+		input: "./content",          // default: "."
 		includes: "../_includes",  // default: "_includes" (`input` relative)
 		data: "../_data",          // default: "_data" (`input` relative)
 		output: "docs"
@@ -124,5 +127,5 @@ export const config = {
 	// it will transform any absolute URLs in your HTML to include this
 	// folder name and does **not** affect where things go in the output folder.
 
-	// pathPrefix: "/",
+	pathPrefix: "/",
 };
