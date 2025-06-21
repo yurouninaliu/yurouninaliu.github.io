@@ -2,7 +2,7 @@
 const eleventyNavigation = {
 	key: "CV",
 	order: 2,
-    url: "/cv.pdf",
+    url: "/public/cv/cv.pdf",
 };
 ---
 
