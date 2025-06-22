@@ -6,7 +6,7 @@ eleventyNavigation:
 ### Double Hot jupiters through ZLK migration
 Advisor: Dr. Tiger Lu and Prof. Malena Rice
 
-I researched the formation of double hot Jupiter systems through mirrored von Zeipel–Lidov–Kozai (ZLK) migration in stellar binaries. I ran N-body simulations using REBOUND and REBOUNDx to study how asymmetric planetary masses and mutual inclinations influence double hot Jupiter formation. I also estimated the occurrence rate of such systems from the observed distribution of Gaia binaries known to host hot Jupiters. This work resulted in a first-author publication that is under review and provides testable predictions for identifying additional double hot Jupiter systems in future surveys.
+I researched the formation of double hot Jupiter systems through mirrored von Zeipel–Lidov–Kozai (ZLK) migration in stellar binaries. I ran N-body simulations using REBOUND and REBOUNDx to study how asymmetric planetary masses and mutual inclinations influence double hot Jupiter formation. I also estimated the occurrence rate of such systems from the observed distribution of Gaia binaries known to host hot Jupiters. This work resulted in a [first-author publication](https://iopscience.iop.org/article/10.3847/1538-4357/add405) and provides testable predictions for identifying additional double hot Jupiter systems in future surveys.
 
 <img src="https://yurouninaliu.github.io/public/img/example.gif" alt="text" style="width:75%">
 
